@@ -138,6 +138,24 @@ La miniaturisation concerne l'intérieur et le form factor — jamais le standar
 
 ---
 
+## RepoVerse Integration
+
+**Chaque cube est un repo. Le mesh physique est le mesh logiciel.**
+
+Quand tu connectes deux cubes → ils apparaissent comme des nœuds liés dans RepoVerse.
+Quand tu déconnectes un cube → il disparaît du graph. Proprement.
+Le réseau social n'est pas une abstraction — c'est la topologie physique de tes cubes.
+
+Ton identité RepoVerse = ton Cubion Personnel.
+Ton espace RepoVerse = ton cluster de cubes.
+Pas de compte. Pas de serveur. Le hardware EST le réseau.
+
+Cubion est la couche physique de Xerboxion.
+RepoVerse est l'interface sociale qui vit dessus.
+CubionLink est le protocole qui fait le lien.
+
+---
+
 ## Vision maximale
 
 Des cubes dans ta poche. Des cubes sur ton corps. Des cubes dans ta maison.
@@ -149,3 +167,4 @@ Des cubes qui forment une station spatiale.
 Un cube de 2027 qui fonctionne encore en 2527.
 
 **Tout est cube. Chaque cube dure éternellement.**
+
