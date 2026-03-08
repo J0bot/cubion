@@ -74,6 +74,24 @@ The CFC is the soul of the project. It defines:
 
 ---
 
+## CubionLink Protocol
+
+CubionLink is the software protocol that runs over CFC. It handles:
+- **Discovery** — cubes detect each other on connection, exchange capabilities
+- **Routing** — data finds its way through the mesh without any central router
+- **Resource sharing** — CPU, RAM, GPU, storage, power advertised and requested across the mesh
+- **Hot-plug** — graceful and abrupt disconnection handled cleanly
+
+Every CubionLink session opens with a `HELLO` packet whose magic number is π:
+```
+MAGIC = 0x3141592653589793
+```
+One additional digit of π is verified per year. The network gets more precise over time — exactly like π itself.
+
+> See [`software/protocol/CubionLink-v0.md`](software/protocol/CubionLink-v0.md)
+
+---
+
 ## Repository Structure
 
 ```
@@ -120,12 +138,28 @@ cubion/
 
 ---
 
-## Why MIT?
+## Philosophy
 
-Because the goal is **maximum spread**.  
-Companies can build proprietary cubes.  
+Cubion is built on moral commitments that sit above the license.
+
+- The CFC standard belongs to everyone. No company, no foundation, no individual can own it.
+- Cubion will never be forked into a closed version. If someone does it, they've left the project.
+- A cube from 2027 must work with a cube from 2127. Backward compatibility is not a feature — it's the contract.
+- Privacy is default. Cubes do not phone home. Ever.
+
+> See [`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md) for the full moral commitments.
+
+---
+
+## License
+
+MIT — because the goal is **maximum spread**.
+
+Companies can build proprietary cubes. Sell them. Make money.  
 But the CFC standard stays open — so their cubes must be compatible with everyone else's.  
-The standard wins regardless.
+The standard wins regardless of what anyone builds on top of it.
+
+> See [`LICENSE`](LICENSE)
 
 ---
 
@@ -135,7 +169,9 @@ The standard is open for discussion before v1.0 ratification.
 After v1.0 — the CFC connector spec is **frozen**.  
 All other parts of the project welcome contributions.
 
-See [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)
+> See [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md)
+> See [`docs/TEAM.md`](docs/TEAM.md) if you want to contribute or join the project.
+
 
 ---
 
@@ -146,13 +182,6 @@ Each cube is a B0XI0N node. The CubionLink protocol is the XI0N layer.
 The long-term goal: a single cube that contains everything — and a human (a XERI0N) who just thinks, creates, and lives.
 
 > See [`docs/VISION.md`](docs/VISION.md) for the full ecosystem catalog and convergence vision.  
-> See [`docs/TEAM.md`](docs/TEAM.md) if you want to contribute or join the project.
-
----
-
-## License
-
-MIT License — see [`LICENSE`](LICENSE)
 
 ---
 
